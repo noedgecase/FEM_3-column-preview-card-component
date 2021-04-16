@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  display: flex;
+  min-width: 1000px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 3rem 3rem 0 3rem;
+  .card__title {
+    h1 {
+      color: hsl(0, 0%, 95%);
+      font-size: 46px;
+      font-family: 'Big Shoulders Display', sans-serif;
+    }
+  }
+  .card__content {
+    p {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 24px;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+  }
+  .card__button {
+    margin: 5rem 0 3rem 0;
+    button {
+      align-content: flex-start;
+      font-family: 'Lexend Deca', sans-serif;
+      height: 50px;
+      border-radius: 25px;
+      width: 150px;
+      border: 0;
+      &:hover {
+        cursor: pointer;
+      }
+      &:active {
+        color: white;
+        border-width: 2px;
+        border-color: white;
+        border-style: solid;
+        background: transparent;
+      }
+    }
+  }
+}
+
+.sedans {
+  border-radius: 10px 0 0 10px;
+  background-color: hsl(31, 77%, 52%);
+  button {
+    color: hsl(31, 77%, 52%);
+  }
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  button {
+    color: hsl(184, 100%, 22%);
+  }
+}
+.luxury {
+  border-radius: 0 10px 10px 0;
+  background-color: hsl(179, 100%, 13%);
+  button {
+    color: hsl(179, 100%, 13%);
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
