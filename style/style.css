@@ -6,7 +6,7 @@ html {
   padding: 0;
 }
 
-main {
+.column--cards {
   margin: 5rem auto;
   position: relative;
   width: 60%;
@@ -76,7 +76,7 @@ main {
 }
 
 @media (max-width: 1150px) {
-  main {
+  .column--cards {
     width: 50%;
     min-width: 300px;
     display: flex;
