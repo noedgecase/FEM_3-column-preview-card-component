@@ -1,16 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
-body {
+html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 main {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  margin: 5rem auto;
+  position: relative;
   width: 60%;
   display: flex;
   min-width: 1000px;
@@ -77,10 +75,46 @@ main {
   color: #004241;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
   main {
+    width: 50%;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
+  }
+
+  .card {
+    text-align: Center;
+    padding: 2rem 2rem 0 2rem;
+    min-height: 700px;
+  }
+
+  .card__content p {
+    font-size: 16px;
+  }
+
+  .card__title {
+    margin: 0;
+  }
+
+  .sedans {
+    border-radius: 10px 10px 0 0;
+    background-color: #e38826;
+  }
+  .sedans button {
+    color: #e38826;
+  }
+
+  .card__button {
+    margin: 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 10px 10px;
+    background-color: #004241;
+  }
+  .luxury button {
+    color: #004241;
   }
 }
 
