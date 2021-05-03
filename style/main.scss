@@ -45,8 +45,12 @@ main {
       border-radius: 25px;
       width: 150px;
       border: 0;
-      &:hover {
+      transition: transform 300ms;
+      &:hover,
+      &:focus {
         cursor: pointer;
+        transform: scale(1.05, 1.05);
+        transition: transform 300ms;
       }
       &:active {
         color: white;

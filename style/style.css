@@ -42,9 +42,12 @@ main {
   border-radius: 25px;
   width: 150px;
   border: 0;
+  transition: transform 300ms;
 }
-.card .card__button button:hover {
+.card .card__button button:hover, .card .card__button button:focus {
   cursor: pointer;
+  transform: scale(1.05, 1.05);
+  transition: transform 300ms;
 }
 .card .card__button button:active {
   color: white;
