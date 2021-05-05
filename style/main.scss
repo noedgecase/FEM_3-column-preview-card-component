@@ -2,24 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
 html {
+  font-size: 16px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .column--cards {
-  margin: 5rem auto;
+  margin: 10em auto;
   position: relative;
-  width: 60%;
+  width: clamp(1000px, 60%, 1400px);
   display: flex;
-  min-width: 1000px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 3rem 3rem 0 3rem;
+  justify-content: center;
+  padding: 5em 3em 0 3em;
   .card__title {
     h1 {
       color: hsl(0, 0%, 95%);
@@ -29,9 +29,11 @@ html {
   }
   .card__content {
     p {
+      margin: 0 auto;
       font-family: 'Lexend Deca', sans-serif;
-      font-size: 24px;
+      font-size: clamp(1rem, 2vw, 1.2rem);
       color: hsla(0, 0%, 100%, 0.75);
+      width: clamp(10ch, 100%, 35ch);
     }
   }
   .card__button {
@@ -85,15 +87,14 @@ html {
 
 @media (max-width: 1150px) {
   .column--cards {
-    width: 50%;
-    min-width: 300px;
+    margin: 3em auto;
+    width: clamp(300px, 50%, 20em);
     display: flex;
     flex-direction: column;
   }
   .card {
     text-align: Center;
     padding: 2rem 2rem 0 2rem;
-    min-height: 700px;
   }
   .card__content {
     p {
