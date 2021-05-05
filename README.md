@@ -12,7 +12,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./demo-desktop.gif)
-![](./demo-mobile.gif)
+<--![](./demo-mobile.gif)-->
 
 ### Links
 
